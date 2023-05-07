@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 15</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">Home</a>
+    </header>
+    <main>
+        <p>Escribir un programa que escriba en pantalla los divisores de un número dado</p>
+        <br>
+        <script>
+            let num = parseInt(prompt("Ingrese un número"));
+            let divisores = []
+            for (var i=0;i<=num;i++){
+                if (num % i == 0){
+                    divisores.push(i);
+                }
+            }
+            document.write("El numero ", num, " es divisible por ");
+            for (var i=0;i<divisores.length;i++){
+                document.write(divisores[i]);
+                if (i!=divisores.length-1){
+                    document.write(" ,");
+                }
+            }
+        </script>
+    </main>
+</body>
+</html>

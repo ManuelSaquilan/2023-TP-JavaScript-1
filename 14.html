@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 14</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">Home</a>
+    </header>
+    <main>
+        <p>Añadir al ejercicio anterior que nos diga por cual de los cuatro es divisible (hay
+            que decir todos por los que es divisible)</p>
+        <br>
+        <script>
+            let num = parseInt(prompt("Ingrese un numero"));
+            let divisible = [];
+            let contador = 0;
+            if (num % 2 == 0){
+                divisible.push("2");
+                contador++;}
+            if(num % 3 == 0){
+                divisible.push("3");
+                contador++;}
+            if(num % 5 == 0){
+                divisible.push("5");
+                contador++;}
+            if(num % 7 == 0){
+                divisible.push("7");
+                contador++;}
+            if (divisible[0] == ""){
+                document.write("El numero ", num ," no es divisible por 2, 3, 5 ni 7");
+            }else{
+                document.write("El numero ", num ," divisible por : ");
+                for (var i=0;i < divisible.length;i++){
+                    document.write(divisible[i]);
+                if (i!=divisible.length-1){
+                    document.write(", ");
+                    }
+                }
+            }
+        </script>
+    </main>
+</body>
+</html>

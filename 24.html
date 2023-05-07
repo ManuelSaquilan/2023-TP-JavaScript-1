@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 24</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">Home</a>
+    </header>
+    <main>
+        <p>Haz un script que escriba una pirámide inversa de los números del 1 al
+            número que indique el usuario de la siguiente forma : (suponiendo que indica 6).
+            666666
+            55555
+            4444
+            333
+            22
+            1</p>
+        <br>
+        <script>
+            let piramide = [];
+            cadena = ""
+            for (var i=1;i<=30;i++){
+                for (var j=1;j<=i;j++){
+                    cadena = cadena + i;
+                }
+                piramide.push(cadena);
+                cadena = ""
+            }
+            piramide.reverse();
+            for (i of piramide){
+                document.write(i,"<br>");
+            }
+        </script>
+    </main>
+</body>
+</html>

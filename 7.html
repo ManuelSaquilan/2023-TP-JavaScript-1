@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">Home</a>
+    </header>
+    <main>
+        <p>Escribe un programa que pida 3 números y escriba en la pantalla el mayor de
+            los tres</p>
+        <br>
+        <script>
+            let num1 = parseInt(prompt ("1° número: "));
+            let num2 = parseInt(prompt ("2° número: "));
+            let mayor = 0;
+            if (num1 > num2)
+                {mayor = num1;}
+            else
+                mayor = num2;
+            let num3 = parseInt(prompt ("3° número: "));
+            if (mayor < num3)
+                {mayor = num3;}
+            document.write("El número mayor entre " , num1 , " , ", num2, " y ",num3," es ", mayor);
+        </script>
+    </main>
+</body>
+</html>

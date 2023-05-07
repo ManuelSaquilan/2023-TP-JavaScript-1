@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 19</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">Home</a>
+    </header>
+    <main>
+        <p>Pide una nota (número). Muestra la calificación según la nota:
+            ● 0-3: Muy deficiente
+            ● 3-5: Insuficiente
+            ● 5-6: Suficiente
+            ● 6-7: Bien
+            ● 7-9: Notable
+            ● 9-10: Sobresaliente</p>
+        <br>
+        <script>
+            let nota = parseInt(prompt("Ingrese su nota:"));
+            let calificacion = "";
+            switch (true){
+                case (nota<3): calificacion="Muy deficiente";
+                    break;
+                case (nota<5): calificacion="Insuficiente";
+                    break;
+                case (nota<6): calificacion="Suficiente";
+                    break;
+                case (nota<7): calificacion="Bien";
+                    break;
+                case (nota<9): calificacion="Notable";
+                    break;
+                case (nota<10): calificacion="Sobresaliente";
+                    break;
+            }
+            document.write("Tu calificación es: ", calificacion);
+        </script>
+    </main>
+</body>
+</html>

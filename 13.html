@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 13</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">Home</a>
+    </header>
+    <main>
+        <p>Escribe un programa que pida un número y nos diga si es divisible por 2, 3, 5 o
+            7 (sólo hay que comprobar si lo es por uno de los cuatro)</p>
+        <br>
+        <script>
+            let num = parseInt(prompt("Ingrese un numero"));
+            if (num % 2 == 0){
+                document.write("El numero ", num , " es divisible por 2");}
+            else if(num % 3 == 0){
+                document.write("El numero ", num , " es divisible por 3");}
+            else if(num % 5 == 0){
+                document.write("El numero ", num , " es divisible por 5");}
+            else if(num % 7 == 0){
+                document.write("El numero ", num , " es divisible por 7");}
+            else {
+                document.write("El numero ", num , " no es divisible por 2, 3, 5 ni 7")}
+        </script>
+    </main>
+</body>
+</html>

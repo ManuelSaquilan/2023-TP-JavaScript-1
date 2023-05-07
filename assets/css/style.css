@@ -1,0 +1,23 @@
+header{
+  background-color: #cec7a6;
+  font-size: x-large;
+  padding: 5px;
+}
+ol {
+    list-style-type: decimal-leading-zero;
+    margin-left: 25px ;
+    padding: 5px;
+  }
+  
+  
+li a{
+    display:flexbox;
+    color: rgb(9, 9, 9);
+    text-align: center;
+    text-decoration: none;
+}
+
+
+li a:hover {
+    background-color: #827b7b;
+}

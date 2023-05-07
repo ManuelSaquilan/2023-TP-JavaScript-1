@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 20</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">Home</a>
+    </header>
+    <main>
+        <p>Realiza un script que pida cadenas de texto hasta que se pulse “cancelar”. Al
+            salir con “cancelar” deben mostrarse todas las cadenas concatenadas con un guión</p>
+        <br>
+        <script>
+            let texto = ""
+            let cadena = [];
+            while (true){
+                confirmacion = confirm("Ingresa texto?");
+                if (confirmacion == true){
+                    texto = prompt("Ingrese un texto");
+                    cadena.push(texto); 
+                }
+                else {
+                    break;
+                }
+            }
+
+            for (t of cadena){
+                document.write(t, "-");
+            }
+        </script>
+    </main>
+</body>
+</html>

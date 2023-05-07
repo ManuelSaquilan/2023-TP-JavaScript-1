@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 17</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">Home</a>
+    </header>
+    <main>
+        <p>Escribir un programa que nos diga si un número dado es primo (no es divisible
+            por ninguno otro número que no sea él mismo o la unidad)</p>
+        <br>
+        <script>
+            let num = parseInt(prompt("Ingrese el 1° número"));
+            let divisores = [];
+            for (var i=0;i<=num;i++){
+                if (num % i == 0){
+                    divisores.push(i);
+                }
+            }
+            if (divisores[0] == 1 && divisores[1] == num){
+                    document.write(num, " es un numero primo");}
+            else{document.write(num, " no es un numero primo");}
+        </script>
+    </main>
+</body>
+</html>

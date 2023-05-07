@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">Home</a>
+    </header>
+    <main>
+        <p>Escribe un programa que pida una frase y escriba las vocales que aparecen</p>
+        <br>
+        <script>
+            let frase = prompt ("Ingrese una frase: ");
+            let fraseminuscula = frase.toLocaleLowerCase();
+            const vocales = ["a","e","i","o","u"];
+            repiten = [];
+            for (i=0;i<fraseminuscula.length;i++){
+                letra = fraseminuscula.substring(i, (i+1));
+                for (j=0;j<6;j++){
+                    if (vocales[j] == letra){
+                        repiten.push(letra);
+                    }
+                }
+            }
+            document.write("Las vocales que aparecen en la frase: ",frase," son : ", repiten);
+        </script>
+    </main>
+</body>
+</html>

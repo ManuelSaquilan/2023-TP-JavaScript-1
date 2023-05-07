@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 9</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">Home</a>
+    </header>
+    <main>
+        <p>Escribe un programa que pida una frase y escriba cuantas veces aparece la
+            letra a</p>
+        <br>
+        <script>
+            let frase = prompt ("Ingrese una frase: ");
+            contador = 0;
+            for (i=0;i<frase.length;i++){
+                letra = frase.substring(i, (i+1));
+                if ("a" == letra){
+                contador = contador +1;
+                }
+            }
+            document.write("La letra a se repitió ", contador , " veces");
+            console.log(contador);
+        </script>
+    </main>
+</body>
+</html>

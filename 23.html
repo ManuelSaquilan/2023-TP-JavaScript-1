@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 23</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">Home</a>
+    </header>
+    <main>
+        <p>Realiza un script que escriba una pirámide del 1 al 30 de la siguiente forma : 1
+            22
+            333
+            4444
+            55555
+            666666
+            …….</p>
+        <br>
+        <script>
+            let piramide = [];
+            cadena = ""
+            for (var i=1;i<=30;i++){
+                for (var j=1;j<=i;j++){
+                    cadena = cadena + i;
+                }
+                piramide.push(cadena);
+                cadena = ""
+            }
+            for (i of piramide){
+                document.write(i,"<br>");
+            }
+        </script>
+    </main>
+</body>
+</html>
